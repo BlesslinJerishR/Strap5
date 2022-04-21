@@ -1,3 +1,3 @@
 ## Boot5
-- Just a Bootstrap 5 workspace.
+- Just a Bootstrap 5 website.
 #### [ Developer : Blesslin ]
