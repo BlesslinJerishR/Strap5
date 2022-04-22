@@ -11,12 +11,27 @@
     <link rel="icon" href="imgs/boot.png" type="png">
     <title>Boot5</title>
 </head>
+
 <style>
-    .right{
+    
+    html{
+        overflow-x: hidden;
+    }
+
+    .pr{
         position: relative;
     }
+
+    .news{
+        position: relative;
+        left: 16vh;
+    }
+
 </style>
+
 <body>
+    
+    <!-- Hero Section -->
     <div class="container-sm pt-5 border my-5 bg-dark text-white">
         <h1 class="text-center display-4">Hola Friend.</h1>
         <p class="h6 text-center p-3"> I am Bootstrap 5</p>
@@ -29,21 +44,25 @@
             <div class="col text-dark bg-white text-center p-3">Angular&nbsp;<span class="badge rounded-pill text-white bg-danger">new</span></div>
         </div>
     </div>
-<div class="container mx-auto d-block text-center">
-    <img class="rounded" height="260vh" src="imgs/gr.jpg" alt="Ghost Recon">
-    <img class="rounded" height="260vh" src="imgs/grb.jpg" alt="Ghost Recon">
-    <img class="rounded" height="260vh" src="imgs/grs.jpg" alt="Ghost Recon">
-    <img class="rounded" height="260vh" src="imgs/grt.jpg" alt="Ghost Recon">
-</div>
-    
-<div class="container mt-3">
-    <div class="alert alert-warning alert-dismissible fade show">
-        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-        <span class="spinner-border spinner-border-sm"></span>
-        <strong>Info !</strong> These data were not stored in the database.
-    </div>    
-</div>
 
+    <!-- 4images -->
+    <div class="container mx-auto d-block text-center">
+        <img class="rounded" height="260vh" src="imgs/gr.jpg" alt="Ghost Recon">
+        <img class="rounded" height="260vh" src="imgs/grb.jpg" alt="Ghost Recon">
+        <img class="rounded" height="260vh" src="imgs/grs.jpg" alt="Ghost Recon">
+        <img class="rounded" height="260vh" src="imgs/grt.jpg" alt="Ghost Recon">
+    </div>
+
+<!-- Warning x -->
+    <div class="container mt-3">
+        <div class="alert alert-warning alert-dismissible fade show">
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            <span class="spinner-border spinner-border-sm"></span>
+            <strong>Info !</strong> These data were not stored in the database.
+        </div>    
+    </div>
+
+    <!-- Tables -->
     <div class="container mt3 pt-1">
         <table class="table">
             <thead class="table-dark">
@@ -73,10 +92,12 @@
         </table>
     </div>
 
+    <!--Corporate Button -->
     <div class="container mt3 pt1 d-grid">
         <a href="https://ecanarys.com" class="btn btn-outline-primary">eCanarys</a>
     </div>
-
+    
+    <!-- Progress Bar -->
     <div class="container pt-3">
         <div><h3 class="display-6">Skills</h3></div>
         <p class="pt-2">HTML</p>
@@ -95,8 +116,66 @@
         </div>
     </div>
 
+    <!-- NEWS -->
+    <div class="container mt-3 text-center">
+        <h2 class="display-6">News</h2>
+    </div>
+    
+    <!-- Cards -->
+    <div class="container mt-5 d-flex mx-auto text-center news">
+        <div class="card" style="width: 300px;">
+            <img class="card-img-top" src="imgs/cs.png">
+            <div class="card-body">
+                <h4 class="card-title">Two Terrorists Killed</h4>
+                <p class="class-text">A fierce gun battle erupted between security forces and terrorists near an army installation in Jammu early Friday morning, two days ahead of a visit by Prime Minister Narendra Modi to the region. Two terrorists have been killed.</p>
+                <a target="_blank" href="https://www.ndtv.com/india-news/trooper-dead-4-injured-in-major-encounter-in-jammu-ahead-of-pms-visit-2909262" class="btn btn-primary">Read more</a>
+            </div>
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="card" style="width: 300px;">
+            <img class="card-img-top" src="imgs/hj.jpg">
+            <div class="card-body">
+                <h4 class="card-title">Hijab Ban</h4>
+                <p class="class-text">Hijab Ban, Aliya Assadi and Resham had collected their hall tickets and turned up donning burqas to take the exams at the Vidyodaya PU College in Udupi. They tried to convince the invigilators and the college principal.</p>
+                <a target="_blank" href="https://www.ndtv.com/india-news/two-pro-hijab-petitioners-in-karnatakas-udupi-not-allowed-to-take-exams-wearing-hijab-leave-college-premises-2909571" class="btn btn-primary">Read more</a>
+            </div>
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="card" style="width: 300px;">
+            <img class="card-img-top" src="imgs/co.jpg">
+            <div class="card-body">
+                <h4 class="card-title">Coronavirus</h4>
+                <p class="class-text">The number of deaths climbed to 5,22,062 with 56 fresh fatalities with 2,380 new coronavirus infections being reported in a day, India's total tally of COVID-19 cases rose to 4,30,49,974 according to the Union Health Ministry</p>
+                <a target="_blank" href="https://www.ndtv.com/india-news/coronavirus-india-live-updates-coronavirus-cases-today-covid-19-cases-in-india-omicron-covid-cases-india-covid-cases-april-21-2905752" class="btn btn-primary">Read more</a>
+            </div>
+        </div>  
+    </div>
+    
+    <!-- Spinners -->
+    <div class="container pt-5 mx-auto d-block text-center">
+        <div class="spinner-border text-info"></div>
+        <div class="spinner-grow text-info"></div>
+        <div class="spinner-border text-danger"></div>
+        <div class="spinner-grow text-info"></div>
+        <div class="spinner-border text-info"></div>
+        <div class="spinner-grow text-info"></div>
+        <div class="spinner-border text-danger"></div>
+    </div>
+    
+    <!-- Pagination -->
+    <div class="container pt-3">
+        <ul class="pagination justify-content-center" style="margin: 20px 0">
+            <li class="page-item"><a href="#" class="page-link text-white bg-dark">Previous</a></li>
+            <li class="page-item active"><a href="#" class="page-link text-white bg-dark">1</a></li>
+            <li class="page-item"><a href="#" class="page-link text-white bg-dark">2</a></li>
+            <li class="page-item"><a href="#" class="page-link text-white bg-dark">3</a></li>
+            <li class="page-item"><a href="#" class="page-link text-white bg-dark">Next</a></li>
+        </ul>
+    </div>
+
+    <!-- Footer -->
     <div class="container text-center pt-3">
-        <p> Made with &#128153; India<br><span class="right"><kbd>Dev : Blesslin</kbd></span></p>
+        <p> Made with &#128153; India<br><span class="pr"><kbd>Dev : Blesslin</kbd></span></p>
     </div>
 </body>
 </html>
