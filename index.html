@@ -22,6 +22,20 @@
         position: relative;
     }
 
+    .news{
+        display: flex;
+    }
+
+    @media only screen and (max-device-width: 600px)
+    { 
+        .news{
+            display: block;
+            position: relative;
+            left: 10vh;    
+        }
+    }
+
+
 </style>
 
 <body>
@@ -94,7 +108,7 @@
     
     <!-- Progress Bar -->
     <div class="container pt-3">
-        <div><h3 class="display-6">Skills</h3></div>
+        <div><h3 class="display-6 text-center">Skills</h3></div>
         <p class="pt-2">HTML</p>
         <div class="progress" style="height:21px">
             <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 70%; height:21px">70%</div>
@@ -117,7 +131,7 @@
     </div>
     
     <!-- Cards -->
-    <div class="container mt-5 d-flex mx-auto text-center">
+    <div class="container mt-5 mx-auto text-center news">
         <div class="card" style="width: 50vh;">
             <img class="card-img-top" src="imgs/cs.png">
             <div class="card-body">
@@ -154,7 +168,29 @@
             </div>
         </div>
     </div>
-    
+   
+    <!-- Collapse -->
+    <div class="container pt-3">
+        <h2 class="display-3 pt-3 text-center">Festivals</h2>
+
+        <button data-bs-toggle="collapse" data-bs-target="#demo2" class="btn bg-success text-white">Independce Day</button>
+        <div id="demo2" class="collapse mt-3">
+            Independence Day is celebrated annually on 15 August as a national holiday in India commemorating the nation's independence from the United Kingdom on 15 August 1947.
+        </div>
+        <p></p>
+
+        <button data-bs-toggle="collapse" data-bs-target="#demo1" class="btn bg-warning text-white">Ugadi</button>
+        <div id="demo1" class="collapse mt-3">
+            Ugadi or Yugadi, also known as Samvatsaradi, is the New Year's Day according to the Hindu Calendar and is celebrated in the states of Andhra Pradesh, Telangana, and Karnataka in India. It is festively observed in these regions on the first day of the Hindu lunisolar calendar month of Chaitra.
+        </div>
+        <p></p>
+        
+        <button data-bs-toggle="collapse" data-bs-target="#demo" class="btn bg-danger text-white">Christmas</button>
+        <div id="demo" class="collapse mt-3">
+            Christmas is an annual festival commemorating the birth of Jesus Christ, observed primarily on December 25 as a religious and cultural celebration among billions of people around the world.
+        </div>
+    </div>
+
     <!-- Spinners -->
     <div class="container pt-5 mx-auto d-block text-center">
         <div class="spinner-border text-info"></div>
